@@ -1,0 +1,409 @@
+header a img {
+    height: 92px;
+    display: block;
+}
+
+.navigatie {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #a6c4c4;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-bottom: -20px;
+}
+
+.boek {
+    height: 18px;
+    float: right;
+    padding-left: 7px;
+}
+
+.download {
+    height: 18px;
+    float: right;
+    padding-left: 7px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #99258d;
+}
+
+nav ul li a {
+    color: #2b4040;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+li img {
+    height: 15px;
+}
+
+nav p {
+    margin-top: 50px;
+}
+
+nav form {
+    margin-top: 45px;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    border: solid 8px #99258d;
+    margin: 0;
+    padding-left: 300px;
+    padding-right: 300px;
+    height: 1000px;
+}
+
+.nav2 {
+    display: flex;
+    padding-left: 600px;
+    margin-bottom: -8px;
+    justify-content: space-between;
+    color: black;
+}
+
+h1 {
+    margin-bottom: -50px;
+    color: #a84089;
+}
+
+h2 {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #99258d;
+}
+
+h2 strong {
+    font-weight: 400;
+}
+
+h3 {
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0;
+    padding: 5px 5px 0px 15px;
+}
+
+h3 strong {
+    font-weight: 200;
+    color: #FFDF5D;
+}
+
+.western {
+    background-image: url(../images/western.png);
+    position: relative;
+    top: 0px;
+    width: 523px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    display: block;
+    color: white;
+}
+
+.twitter {
+    background-image: url(../images/twitter.png);
+    position: relative;
+    top: 0px;
+    width: 523px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    color: white;
+}
+
+.paranoia {
+    background-image: url(../images/paranoia.png);
+    position: relative;
+    top: 0px;
+    width: 33%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    margin-top: -10px;
+}
+
+.klumperbeven {
+    background-image: url(../images/klumper.png);
+    position: relative;
+    top: 0px;
+    width: 33%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    margin-top: -10px;
+}
+
+.gefrustreerd {
+    background-image: url(../images/gefrustreerd.png);
+    position: relative;
+    top: 0px;
+    width: 33%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    margin-top: -10px;
+}
+
+article button {
+    position: absolute;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notitie {
+    background-image: url(../images/notitie.png);
+    height: 200px;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    position: relative;
+    margin-top: 15px;
+    border: solid 1px #d4e2e2;
+}
+
+.verliefd {
+    background-image: url(../images/verliefd.png);
+    height: 200px;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-top: 15px;
+    border: solid 1px #d4e2e2;
+}
+
+.regenboog {
+    background-image: url(../images/regenboog.png);
+    height: 200px;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-top: 15px;
+    border: solid 1px #d4e2e2;
+}
+
+.social2 {
+    display: flex;
+    position: absolute;
+    font-size: 0.8em;
+    color: #a84089;
+    bottom: 10px;
+    padding-left: 10px;
+}
+
+div li img {
+    height: 10px;
+    color: aqua;
+}
+
+.hdrie {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 40px;
+    padding-top: 15px;
+    width: 326px;
+    font-size: 1.2em;
+    color: #a84089;
+    background-color: #FFDF5D;
+}
+
+article ul {
+    padding: 0px;
+}
+
+article ul li {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 0px;
+}
+
+.sluit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+}
+
+.social {
+    position: absolute;
+    top: 45px;
+    display: flex;
+    margin-top: 0;
+    margin-left: 15px;
+    padding-top: 5px;
+    border-top: solid 4px #ffffff;
+}
+
+article button:first-of-type {
+    position: absolute;
+    bottom: 20px;
+    left: 320px;
+    width: 6rem;
+    height: 4rem;
+    font-size: 0.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #99258d;
+    background-image: url(../images/plus.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-size: 1.4rem;
+    cursor: pointer;
+}
+
+article button {
+    position: absolute;
+    bottom: 20px;
+    left: 420px;
+    text-transform: uppercase;
+    width: 6rem;
+    height: 4rem;
+    font-size: 0.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #99258d;
+    background-image: url(../images/download2.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-size: 1.4rem;
+    cursor: pointer;
+}
+
+body button:hover {
+    background-color: #811a76;
+}
+
+div button:first-of-type {
+    position: absolute;
+    left: 270px;
+    bottom: 16px;
+    width: 4rem;
+    height: 3rem;
+    font-size: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #99258d;
+    background-image: url(../images/download2.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-size: 1.2rem;
+    cursor: pointer;
+    padding-top: 30px;
+}
+
+div button {
+    position: absolute;
+    left: 200px;
+    bottom: 16px;
+    width: 4rem;
+    height: 3rem;
+    font-size: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #99258d;
+    background-image: url(../images/plus.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-size: 1.2rem;
+    cursor: pointer;
+    padding-top: 30px;
+}
+
+.buttongroup {
+    position: absolute;
+    bottom: 20px;
+}
+
+div button:hover {
+    background-color: #811a76;
+}
+
+form div {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border: none;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    display: flex;
+    border: solid 2px #99258d;
+}
+
+section h2 {
+    margin-bottom: -40px;
+}
+
+form fieldset {
+    border: none;
+    padding: 0;
+    margin-left: -20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form legend {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #a84089;
+    padding-top: 5px;
+    padding-left: 60px;
+}
+
+.filter {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #a84089;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+fieldset ul {
+    margin-top: 5px;
+    padding-left: -40px;
+}
+
+.leeg {
+    margin-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
