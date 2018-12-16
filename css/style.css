@@ -1,11 +1,12 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     max-width: 100vw;
-    height: 100vh;
+    height: auto;
     border: solid 5px #a84089;
 }
 
@@ -16,10 +17,10 @@ header nav ul {
     display: flex;
     justify-content: space-between;
     position: relative;
-    max-width: 80vw;
+    max-width: 90vw;
     margin: auto;
     list-style-type: none;
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-weight: 300;
     text-transform: uppercase;
     border-bottom: solid 1px #a6c4c4;
@@ -131,6 +132,34 @@ article:hover {
     box-shadow: inset 0px 8px 56px -10px #000000;
 }
 
+.banner {
+    background-image: url(../images/western.png);
+    position: relative;
+    top: 0px;
+    max-width: 100vw;
+    height: 18vh;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    display: block;
+    color: white;
+    margin-bottom: 0.2em;
+}
+
+.banner:nth-of-type(1) {
+    background-image: url(../images/western.png);
+    background-size: 130%;
+}
+
+.banner:nth-of-type(2) {
+    background-image: url(../images/twitter.png)
+}
+
+.banner:nth-of-type(3) {
+    background-image: url(../images/paranoia.png)
+}
+
+
+/*
 .western {
     background-image: url(../images/western.png);
     position: relative;
@@ -168,6 +197,7 @@ article:hover {
     color: white;
     margin-top: 0.2em;
 }
+*/
 
 article h3 {
     position: absolute;
@@ -256,17 +286,113 @@ body button:hover {
 /* alle verhalen */
 
 .alleverhalen {
-    padding-top: 1.4em;
+    position: absolute;
+    top: 0.9em;
 }
 
-section button {
+.filter {
     position: absolute;
-    right: 1em;
-    margin-top: 1.3em;
-    font-size: 0.8em;
-    font-weight: 100;
-    color: #000000;
-    background-color: #FFDF5D;
+    top: 2.6em;
+    left: 1em;
+    width: 90vw;
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #FFFFFFFF;
+    background-color: #99258d;
     border: solid 2px #d4e2e2;
-    padding: 0.4em 4em 0.4em 4em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+
+section button img {
+    position: absolute;
+    height: 1em;
+    top: 0.7em;
+    right: 1em;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+section article {
+    position: relative;
+    top: 5em;
+    left: 1em;
+    width: 89vw;
+    height: 20vh;
+    background-image: url(../images/notitie.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: solid 1px #d4e2e2;
+    margin-top: 0.3em;
+}
+
+section article:nth-of-type(2) {
+    background-image: url(../images/verliefd.png);
+}
+
+section article:nth-of-type(3) {
+    background-image: url(../images/regenboog.png);
+}
+
+section article h4 {
+    position: absolute;
+    bottom: 0em;
+    font-size: 1.2em;
+    color: #a84089;
+    padding-left: 0.7em;
+    padding-top: 0.8em;
+    background-color: #FFDF5D;
+    height: 9.6vh;
+    width: 88.8vw;
+}
+
+.social2 {
+    position: absolute;
+    left: -5em;
+    font-size: 0.8em;
+    margin-top: 7em;
+    padding-top: 0.5em;
+    color: #a84089;
+    border-top: solid 0.2em #a84089;
+}
+
+.hartje {
+    padding-left: 0.2em;
+}
+
+section article ul li {
+    color: #a84089;
+}
+
+
+/* footer */
+
+body footer {
+    position: relative;
+    margin-top: 10em;
+    background-color: #f4eee8;
+    padding-top: 0vh;
+    padding-bottom: 16vh;
+    background-image: url(../images/logo-foot.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+body footer a {
+    text-decoration: none;
+    padding: 0em;
+}
+
+body footer a p {
+    color: #99258d;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 4em;
 }
