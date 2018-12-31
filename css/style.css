@@ -364,7 +364,7 @@ article ul:nth-child(2) {
     position: absolute;
     left: 1em;
     font-size: 0.8em;
-    margin-top: 10.5vh;
+    margin-top: 7.5em;
     padding-top: 0.5em;
     color: #a84089;
     border-top: solid 0.2em #a84089;
@@ -388,7 +388,7 @@ body footer {
     position: relative;
     margin-top: 7em;
     background-color: #f4eee8;
-    padding-bottom: 15vh;
+    padding-bottom: 9em;
     background-image: url(../images/logo-foot.png);
     background-repeat: no-repeat;
     background-size: 30vh;
