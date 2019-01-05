@@ -6,7 +6,7 @@
 /* laat formulier verschijnen, bron: Rico Zethof */
 var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-if (w < 950) {
+if (w < 1950) {
     document.getElementById("form").style.display = "none";
 }
 
@@ -20,3 +20,12 @@ function showFilters() {
 }
 
 document.getElementById("filter").addEventListener("click", showFilters);
+
+
+
+
+
+    ('hide').click(function() {
+        (this).addClass("pullDown");
+    });
+

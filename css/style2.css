@@ -1,87 +1,91 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+margin: 0;
+box-sizing: border-box;
+
 }
 
 body {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    max-width: 100vw;
-    height: 100vh;
-    border: solid 5px #a84089;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+max-width: 100vw;
+height: 100vh;
+border: solid 5px #a84089;
+
 }
 
 
 /* navigatie balk */
 
+
 header nav ul {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    max-width: 90vw;
-    margin: auto;
-    list-style-type: none;
-    font-size: 0.8em;
-    font-weight: 300;
-    text-transform: uppercase;
-    border-bottom: solid 1px #a6c4c4;
-    padding: 0;
-    padding-top: 3em;
-    padding-bottom: 0em;
-    margin-top: 1.3em;
+
+display: flex;
+justify-content: space-between;
+position: relative;
+max-width: 90vw;
+margin: auto;
+list-style-type: none;
+font-size: 0.8em;
+font-weight: 300;
+text-transform: uppercase;
+border-bottom: solid 1px #a6c4c4;
+padding: 0;
+padding-top: 2em;
+padding-bottom: 0em;
+margin-top: 1.3em;
 }
 
 nav li {
-    height: 2em
-}
 
-nav li {
     height: 2em;
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
+
+text-decoration: none;
+color: black;
 }
 
 nav a:hover {
-    color: #a84089;
+
+color: #a84089;
 }
 
 nav img {
-    height: 1.2em;
-    margin-bottom: -0.2em;
-    padding-left: 0.3em;
+
+height: 1.2em;
+margin-bottom: -0.2em;
+padding-left: 0.3em;
 }
 
 .logo {
-    height: 66px;
-    margin-top: -2em;
+
+height: 66px;
+margin-top: -2em;
 }
 
 .profiel {
-    font-size: 0.7em;
-    position: absolute;
-    right: 7vw;
-    top: 1.5em;
-    color: #a84089;
-    border: solid 1px #99258d;
-    padding: 0.5em;
-    border-radius: 0.5em;
+
+font-size: 0.7em;
+position: absolute;
+right: 7vw;
+top: 1.5em;
+color: #a84089;
+border: solid 1px #99258d;
+padding: 0.5em;
+border-radius: 0.5em;
 }
 
 .profiel:hover {
-    position: absolute;
-    color: #ffffff;
-    background-color: #99258d;
+
+position: absolute;
+color: #ffffff;
+background-color: #99258d;
 }
 
-h1 strong {
-    color: #FFDF5D;
-}
 
 form {
     border: 1px solid #E7E7E7;
-    height: 15em;
+    height: 18em;
     display: flex;
     justify-content: space-around;
     margin-top: 7em;
@@ -98,6 +102,14 @@ form fieldset label {
 
 form fieldset input {
     border: 1px solid #bfbfbf;
+}
+
+
+form fieldset input:focus {
+    outline: none;
+    border:1px solid #99258d;
+    box-shadow: 0;
+
 }
 
 form fieldset div {
@@ -154,8 +166,34 @@ legend {
 
     form input {
         padding-right: 3em;
-        padding-top: 0.3em;
-        padding-bottom: 0.3em;
-        padding-left: 0.3em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        padding-left: 0.6em;
     }
+
+    }
+
+form fieldset a {
+    text-decoration: none;
+    color: #a84089;
+    font-size: 0.8em;
+    font-weight: 600;
+    position: absolute;
+    bottom: 3em;
+    right: 1em;
 }
+
+    @media only screen and (min-width: 700px) {
+
+        header nav ul {
+            max-width: 80vw;
+            right: 0.3em;
+        }
+
+        form fieldset a {
+            bottom: 1em;
+        }
+
+
+    }
+
