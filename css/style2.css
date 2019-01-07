@@ -12,6 +12,12 @@ border: solid 5px #a84089;
 
 }
 
+@font-face {
+    font-family: 'Museo';
+    src: url(../images/Museo500-Regular.otf);
+
+}
+
 
 /* navigatie balk */
 
@@ -183,15 +189,43 @@ form fieldset a {
     right: 1em;
 }
 
+
+
     @media only screen and (min-width: 700px) {
 
-        header nav ul {
-            max-width: 80vw;
-            right: 0.3em;
-        }
+         .profiel {
+        top: 4vh;
+        right: 5vw;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    header nav ul  {
+        padding-left: 20vw;
+        padding-right: 20vw;
+
+
+    }
 
         form fieldset a {
             bottom: 1em;
+        }
+
+        @media only screen and (min-width: 1024px) {
+
+            header nav ul  {
+                font-size: 1em;
+            }
+
+            .logo {
+        height: 80px
+    }
+
+          .profiel {
+        top: 5.5vh;
+        right: 5vw;
+
+    }
         }
 
 

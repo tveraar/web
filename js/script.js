@@ -22,9 +22,6 @@ function showFilters() {
 document.getElementById("filter").addEventListener("click", showFilters);
 
 
-
-
-
     ('hide').click(function() {
         (this).addClass("pullDown");
     });
