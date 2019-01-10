@@ -11,6 +11,7 @@ box-sizing: border-box;
     position: relative;
     padding-bottom: -5em;
     overflow-x: hidden;
+    background-color: #221e1f;
 
 }
 
@@ -25,12 +26,16 @@ box-sizing: border-box;
 .astro {
     position: fixed;
     top: 30vh;
-    left: 48vw;
+    left: 50vw;
     right: 50vw;
     height: 280px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
 
+}
+
+.astro2 {
+    display: none;
 }
 
 a {
@@ -59,7 +64,8 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 1250px) {
 
     .back {
         display: none;
@@ -72,6 +78,21 @@ a:hover {
     padding-bottom: -5em;
     overflow-x: hidden;
 
+    }
+
+    .astro {
+        display: none;
+    }
+
+    .astro2 {
+        display: block;
+        position: fixed;
+    top: 25em;
+    left: 80vw;
+    right: 50vw;
+    height: 200px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
     }
 
 

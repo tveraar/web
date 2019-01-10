@@ -1,5 +1,6 @@
 * {
 margin: 0;
+-webkit-box-sizing: border-box;
 box-sizing: border-box;
 
 }
@@ -24,7 +25,13 @@ border: solid 5px #a84089;
 
 header nav ul {
 
+display: -webkit-box;
+
+display: -ms-flexbox;
+
 display: flex;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
 justify-content: space-between;
 position: relative;
 max-width: 90vw;
@@ -63,13 +70,12 @@ margin-bottom: -0.2em;
 padding-left: 0.3em;
 }
 
-.logo {
+nav .logo {
 
 height: 66px;
 margin-top: -2em;
 }
-
-.profiel {
+nav a.profiel {
 
 font-size: 0.7em;
 position: absolute;
@@ -81,7 +87,7 @@ padding: 0.5em;
 border-radius: 0.5em;
 }
 
-.profiel:hover {
+nav a.profiel:hover {
 
 position: absolute;
 color: #ffffff;
@@ -89,10 +95,13 @@ background-color: #99258d;
 }
 
 
-form {
+main form {
     border: 1px solid #E7E7E7;
-    height: 18em;
+    height: 19em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-top: 7em;
     margin-left: 1em;
@@ -108,19 +117,29 @@ form fieldset label {
 
 form fieldset input {
     border: 1px solid #bfbfbf;
+    padding-right: 3em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        padding-left: 0.6em;
 }
 
 
 form fieldset input:focus {
     outline: none;
     border:1px solid #99258d;
+    -webkit-box-shadow: 0;
     box-shadow: 0;
 
 }
 
 form fieldset div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -132,7 +151,7 @@ form fieldset div {
     margin-bottom: 1em;
 }
 
-#login {
+input#login {
     position: absolute;
     right: 1em;
     background-color: #991985;
@@ -144,12 +163,12 @@ form fieldset div {
     border-radius: 3px;
 }
 
-fieldset {
+form fieldset {
     position: relative;
     border: none;
 }
 
-legend {
+form legend {
     font-size: 2.5em;
     color: #a84089;
     font-family: Museo;
@@ -158,7 +177,7 @@ legend {
 }
 
 @media only screen and (min-width: 700px) {
-    form {
+    main form {
         position: absolute;
         top: 7vh;
         right: 9vw;
@@ -193,7 +212,7 @@ form fieldset a {
 
     @media only screen and (min-width: 700px) {
 
-         .profiel {
+         header nav .profiel {
         top: 4vh;
         right: 5vw;
         padding-left: 2em;
@@ -217,7 +236,7 @@ form fieldset a {
                 font-size: 1em;
             }
 
-            .logo {
+            header .logo {
         height: 80px
     }
 

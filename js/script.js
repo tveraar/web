@@ -6,10 +6,10 @@
 /* laat formulier verschijnen, bron: Rico Zethof */
 var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-var button = document.getElementById('laad');
-var downloadImg = document.getElementById('icoon');
+var button = document.querySelector('#laad');
+var downloadImg = document.querySelector('#icoon');
 
-var button2 = document.getElementById('laad2');
+var button2 = document.querySelector('#laad2');
 var downloadImg2 = document.getElementById('icoon2');
 var schakelaar = document.getElementById('schakel');
 

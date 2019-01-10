@@ -7,7 +7,7 @@ box-sizing: border-box;
 body {
 font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 max-width: 100vw;
-height: 100vh;
+height: 150vh;
 border: solid 5px #a84089;
 
 }
@@ -242,7 +242,7 @@ article button img {
 
 /* Label */
 .switch {
-  position: fixed;
+  position: absolute;
     top: 7.5em;
     right: 5vw;
   display: inline-block;
