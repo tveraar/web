@@ -6,7 +6,7 @@ box-sizing: border-box;
 }
 
 
-.back {
+img.back {
     max-width: 100%;
     position: relative;
     padding-bottom: -5em;
@@ -15,9 +15,15 @@ box-sizing: border-box;
 
 }
 
-.back2 {
+img.back2 {
     display: none;
 }
+
+img.back3 {
+    display: none;
+}
+
+
 
 .tablet {
     display: none;
@@ -35,6 +41,10 @@ box-sizing: border-box;
 }
 
 .astro2 {
+    display: none;
+}
+
+.astro3 {
     display: none;
 }
 
@@ -65,19 +75,27 @@ a:hover {
 
 
 
+
+
 @media only screen and (max-width: 1250px) {
 
-    .back {
+    img.back {
         display: none;
     }
 
-    .back2 {
+
+    img.back2 {
         display: block;
         max-width: 100%;
     position: relative;
     padding-bottom: -5em;
     overflow-x: hidden;
+        background-color: #221e1f;
 
+    }
+
+    img.back3 {
+        display: none;
     }
 
     .astro {
@@ -95,9 +113,49 @@ a:hover {
     transition: 0.4s;
     }
 
+    .astro3 {
+    display: none;
+}
 
 
 
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    img.back2{
+        display: none;
+    }
+
+    img.back3 {
+        display: block;
+    max-width: 100%;
+    position: relative;
+    padding-bottom: -5em;
+    overflow-x: hidden;
+    background-color: #221e1f;
+
+}
+
+    .astro {
+        display: none;
+    }
+
+    .astro2 {
+        display: none;
+    }
+
+    .astro3 {
+        display: block;
+        position: fixed;
+    top: 25em;
+    left: 87vw;
+    right: 50vw;
+    height: 70px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    }
 }
 
 
