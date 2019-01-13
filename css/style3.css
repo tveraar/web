@@ -100,10 +100,10 @@ article:nth-of-type(1) {
     max-width: 90vw;
     margin: auto;
     border: solid 1px #d4e2e2;;
-    background-image: url(../images/western.png);
+    background-image: url(../images/western2.png);
     background-repeat: no-repeat;
 
-    background-size: 200%;
+    background-size: 160%;
 
 }
 
@@ -168,17 +168,20 @@ article button:nth-of-type(1) {
     cursor: pointer;
 }
 
-article button:nth-of-type(2) {
+article a:nth-child(2) {
     position: absolute;
-    bottom: 1em;
-    right: 6.5em;
+    bottom: 0.7em;
+    right: 4.5em;
     color: white;
+    font-weight: 200;
     background-color: #99258d;
-    border: none;
     border-radius: 3px;
-    height: 5em;
-    width: 5em;
+    height: 3.3em;
+    width: 3.3em;
     cursor: pointer;
+    padding-top: 1em;
+    text-align: center;
+    text-decoration: none;
 
 }
 
@@ -230,7 +233,7 @@ article button img {
 .downloadtext {
     display: block;
     position: absolute;
-    right: 16vw;
+    right: 17vw;
     top: 9.6em;
     font-size: 0.8em;
     color: #99258d;
@@ -319,10 +322,10 @@ input:checked + .slider:before {
     border-top: solid 1px #d4e2e2;
         border-left: solid 1px #d4e2e2;
         border-bottom: solid 1px #d4e2e2;
-    background-image: url(../images/western.png);
+    background-image: url(../images/western2.png);
     background-repeat: no-repeat;
 
-    background-size: 160%;
+    background-size: 170%;
 
 }
 
@@ -383,13 +386,13 @@ article:nth-of-type(2) {
 
     .buttons {
         position: absolute;
-        right: -45.5vw;
+        right: -46.5vw;
         top: 10em;
     }
 
      .buttons2 {
         position: absolute;
-        right: -45.5vw;
+        right: -46.5vw;
          top: 10em;
     }
 
@@ -462,12 +465,12 @@ article:nth-of-type(2) {
 
         .buttons {
         position: absolute;
-        right: -40vw;
+        right: -41vw;
     }
 
      .buttons2 {
         position: absolute;
-        right: -40vw;
+        right: -41vw;
     }
 
 

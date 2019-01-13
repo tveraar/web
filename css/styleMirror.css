@@ -41,7 +41,6 @@ nav li {
     height: 2em;
 }
 
-
 nav a {
 
 text-decoration: none;
@@ -60,7 +59,6 @@ height: 1.2em;
 margin-bottom: -0.2em;
 padding-left: 0.3em;
 }
-
 
 header nav li .logo {
 
@@ -88,7 +86,7 @@ color: #ffffff;
 background-color: #99258d;
 }
 
-header form {
+header input {
     display: none;
 }
 
@@ -140,7 +138,6 @@ text-decoration: none;
 color: #99258d;
 font-weight: 500;
 }
-
 
 
 
@@ -278,13 +275,18 @@ article button {
     cursor: pointer;
 }
 
-
 article button:focus {
     background-image: url(../images/checked.svg);
     background-size: 20px;
     transition: .4s;
     background-color: white;
     border: solid 1px #99258d;
+    color: black;
+}
+ /* titel voor zoekopdracht */
+main div h2 {
+    position: relative;
+    margin-top: 1em;
     color: #99258d;
 }
 
@@ -298,27 +300,24 @@ section h2:nth-last-child(4) {
 }
 
 /* form */
-
-
-#form {
+.hide {
+    display: block;
     border: solid 2px #811a76;
     width: 90vw;
     margin: auto;
 }
 
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
+#form {
+    display: none
+    border: solid 2px #811a76;
+    width: 90vw;
+    margin: auto;
 }
 
 section form fieldset {
     border: none;
     margin: 2em;
 }
-
 
 section form ul  {
 
@@ -436,22 +435,23 @@ section article:nth-of-type(2) {
     background-image: url(../images/verliefd.png);
 }
 
-section article:nth-of-type(3) {
+section article:nth-of-type(1) {
 
     background-image: url(../images/regenboog.png);
+
 }
 
-section article:nth-of-type(4) {
+section article:nth-of-type(3) {
 
     background-image: url(../images/notitie.png);
 }
 
-section article:nth-of-type(5) {
+section article:nth-of-type(4) {
 
     background-image: url(../images/verliefd.png);
 }
 
-section article:nth-of-type(6) {
+section article:nth-of-type(5) {
 
     background-image: url(../images/regenboog.png);
 }
@@ -611,8 +611,6 @@ body footer a p {
         height: 66px;
     }
 
-
-
     section div.verhalen {
 
         position: relative;
@@ -660,48 +658,27 @@ section article h4 {
 
     }
 
-    header form input[type="text"] {
+    header input[type="text"] {
         text-align: center;
     }
 
-    header form input:focus {
-    outline: none;
-    border:1px solid #99258d;
-    box-shadow: 0;
-
-}
-
-    header form button.search {
-        position: absolute;
-        top: 4.2em;
-        left: 13vw;
-        height: 2.333em;
-        width: 2.4em;
-        border: solid 1px #99258d;
-        background-color: white;
-        background-image: url(../images/search.svg);
-        background-repeat: no-repeat;
-        background-size: 13px;
-        background-position: center;
-
-    }
-
-    header form {
-        display: block;
-    }
-
-    header form input[type="text"] {
+    header input {
     display: block;
         position: absolute;
-        border: solid 1px #99258d;
-        background-color: white;
+        border-radius: 10px;
+        border: none;
+        background-color: #e9e9e9;
         padding-top: 0.5em;
         padding: 0.5em;
         top: 5vh;
         left: 4vw;
-        width: 8em;
+        width: 6em;
 }
-
+    header input:focus {
+    display: block;
+        width: 10em;
+        transition: .4s;
+}
 
     section h2:first-child {
 
@@ -811,28 +788,23 @@ article.banner:nth-of-type(1) {
         height: 80px
     }
 
-      header form input[type="text"] {
+      header input[type="text"] {
         text-align: center;
           font-size: 0.9em;
     }
 
-
-    header form input[type="text"] {
+    header input {
     display: block;
         position: absolute;
+        border-radius: 10px;
+        border: none;
+        background-color: #e9e9e9;
         padding-top: 0.5em;
         padding: 0.5em;
         top: 6vh;
         left: 9.5vw;
-        width: 7em;
+        width: 6em;
 }
-
-    header form button.search {
-        height: 3em;
-        width: 3em;
-        top: 5em;
-        left: 17vw;
-    }
 
 
     main section ul.nav2 {
@@ -911,10 +883,6 @@ section article h4 {
 }
 
 @media only screen and (min-width: 1400px) {
-
-    header form button.search {
-        left: 14.5vw;
-    }
 
     button#filter {
         left: 24vw;

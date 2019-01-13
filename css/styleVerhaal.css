@@ -1,7 +1,7 @@
 * {
 margin: 0;
--webkit-box-sizing: border-box;
 box-sizing: border-box;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 }
 
@@ -12,6 +12,7 @@ img.back {
     padding-bottom: -5em;
     overflow-x: hidden;
     background-color: #221e1f;
+
 
 }
 
@@ -24,31 +25,25 @@ img.back3 {
 }
 
 
-
-.tablet {
-    display: none;
-}
-
-.astro {
+img.astro {
     position: fixed;
     top: 30vh;
     left: 50vw;
     right: 50vw;
     height: 280px;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
 
 }
 
-.astro2 {
+img.astro2 {
     display: none;
 }
 
-.astro3 {
+img.astro3 {
     display: none;
 }
 
-a {
+main a {
     position: fixed;
     top: 1em;
     left: 1em;
@@ -61,17 +56,104 @@ a {
     padding-bottom: 0.3em;
     border: solid 1px  #99258d;
     border-radius: 3px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     text-decoration: none;
 
 
 
 }
 
-a:hover {
+main a:hover {
     background-color: #99258d;
     color: white;
 }
+
+footer {
+    position: relative;
+    max-width: 100vw;
+    margin-left: 40%;
+    margin-top: 2em;
+}
+
+footer h2 {
+    color: #99258d;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    width: 10em;
+    margin-right: 0em;
+
+}
+
+footer button {
+    position: absolute;
+    top: 4.7em;
+    left: 30em;
+    background-image: url(../images/hartjelijn.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    border: solid 1px #99258d;
+    background-color: white;
+    border-radius: 3px;
+    padding: 2em;
+}
+
+footer button:focus {
+    transition: .4s;
+     background-image: url(../images/hartje2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+
+footer button:hover {
+   background-color: #99258d;
+    background-image: url(../images/hartje.svg);
+
+}
+
+form #comment {
+    background-color: #99258d;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+   padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-top: 0.5em;
+}
+
+textarea {
+    border: solid 1px #99258d;
+}
+
+
+
+div a {
+
+position: absolute;
+    background-color: #f4eee8;
+   width: 25em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1em;
+    color: #99258d;
+    padding-right: 18em;
+    margin-left: 40vw;
+    border-bottom: solid 3px #99258d;
+    padding-bottom: 0.3em;
+
+
+}
+
+div {
+    margin-top: 2em;
+   height: 10em;
+      background-color: #f4eee8;
+     max-width:  100vw;
+}
+
+
 
 
 
@@ -98,24 +180,34 @@ a:hover {
         display: none;
     }
 
-    .astro {
+    img.astro {
         display: none;
     }
 
-    .astro2 {
+    img.astro2 {
         display: block;
         position: fixed;
     top: 25em;
-    left: 80vw;
+    left: 85vw;
     right: 50vw;
     height: 200px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     }
 
-    .astro3 {
+    img.astro3 {
     display: none;
 }
+
+    footer {
+        margin-left: 25vw;
+    }
+
+    div a {
+        margin-left: 25vw;
+    }
+
+
 
 
 
@@ -138,24 +230,106 @@ a:hover {
 
 }
 
-    .astro {
+    img.astro {
         display: none;
     }
 
-    .astro2 {
+    img.astro2 {
         display: none;
     }
 
-    .astro3 {
+    img.astro3 {
         display: block;
         position: fixed;
-    top: 25em;
-    left: 87vw;
+    top: 18em;
+    left: 85vw;
     right: 50vw;
     height: 70px;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
     }
+
+    footer {
+        max-width: 100vw;
+        margin-left: 2vw;
+    }
+
+    div a {
+
+position: absolute;
+    background-color: #f4eee8;
+   max-width: 100vw;
+        padding-left: 7vw;
+        padding-right: 0em;
+    margin-left: 0vw;
+        text-align: left;
+
+}
+    div {
+        max-width: 100vw;
+        height: 7em;
+    }
+
+    textarea {
+        width: 70vw;
+        margin-left: 5vw;
+    }
+
+footer h2 {
+    color: #99258d;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    width: 10em;
+    margin-right: 0em;
+
+}
+
+footer button {
+    position: absolute;
+    top: 4.7em;
+    left: 80vw;
+    background-image: url(../images/hartjelijn.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    border: solid 1px #99258d;
+    background-color: white;
+    border-radius: 3px;
+    padding: 2em;
+
+}
+
+footer button:focus {
+    transition: .4s;
+     background-image: url(../images/hartje2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+footer button:hover {
+   background-color: #99258d;
+    background-image: url(../images/hartje.svg);
+
+}
+
+form #comment {
+    background-color: #99258d;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+   padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-top: 0.5em;
+    margin-left: 5vw;
+}
+
+textarea {
+    border: solid 1px #99258d;
+}
+
+
+
 }
 
 

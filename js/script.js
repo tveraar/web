@@ -3,25 +3,55 @@
 /eslint 'no-console':0*/
 
 
-/* laat formulier verschijnen, bron: Rico Zethof */
-var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
+/* Variables */
+/* buttons mijn verhalen pagina */
 var button = document.querySelector('#laad');
 var downloadImg = document.querySelector('#icoon');
-
 var button2 = document.querySelector('#laad2');
 var downloadImg2 = document.getElementById('icoon2');
+
+/* download switch */
 var schakelaar = document.getElementById('schakel');
 
+/* download text naast switch */
 var text = document.getElementById('downloadtext');
 
 
+/* + mijn lijst button en afbeelding veranderen */
+var plusLijst = document.querySelector('#plus');
+var icoon = document.getElementById('bal');
+
+
+
+
+/* form in en uitklappen */
+var filterButton = document.getElementById('filter');
+var mijnForm = document.getElementById('form');
+
+/* functie haalt class hide weg als die er is en plaatst class show */
+function showFilters() {
+
+    if (mijnForm.classList.contains("hide")) {
+
+        mijnForm.classList.remove("hide");
+        mijnForm.classList.add("show");
+
+    } else {
+
+        mijnForm.classList.remove("show");
+        mijnForm.classList.add("hide");
+    }
+}
+
+
+/* verander button 1 */
 function change() {
     downloadImg.src = "images/loading.gif";
     downloadImg.style.height = "27px";
 
 }
 
+/* verander button 2 */
 function change2() {
 
      downloadImg2.src = "images/loading.gif";
@@ -29,6 +59,7 @@ function change2() {
 
 }
 
+/* verander alle buttons door de schakelaar */
 function changeAll() {
 
     downloadImg.src = "images/loading.gif";
@@ -40,42 +71,33 @@ function changeAll() {
     text.innerHTML = "Gedownload";
 }
 
+
+function changeLijst() {
+    plusLijst.innerHTML = "Bewaard";
+    plusLijst.style.color = "#99258d";
+    icoon.src = "images/notifi.gif";
+    icoon.style.height = "1.4em";
+    icoon.style.transition = ".4s";
+
+}
+
+
+/* event listeners bij click */
 if (button, button2) {
 button.addEventListener('click', change);
 button2.addEventListener('click', change2);
 schakelaar.addEventListener('click', changeAll);
+
 }
 
-
-
-/* laat formulier verschijnen, bron: Rico Zethof */
-if (w < 1950) {
-    document.getElementById("form").style.display = "none";
-}
+plusLijst.addEventListener('click', changeLijst);
+filterButton.addEventListener('click', showFilters);
 
 
 
-function showFilters() {
-    var x = document.getElementById("form");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
 
 
 
-document.getElementById("filter").addEventListener("click", showFilters);
-
-
-    ('hide').click(function() {
-        (this).addClass("pullDown");
-    });
-
-//$(document).scroll(function() {
- // navbarScroll();
-//});
 
 
 

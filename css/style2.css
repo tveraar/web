@@ -1,6 +1,5 @@
 * {
 margin: 0;
--webkit-box-sizing: border-box;
 box-sizing: border-box;
 
 }
@@ -25,13 +24,7 @@ border: solid 5px #a84089;
 
 header nav ul {
 
-display: -webkit-box;
-
-display: -ms-flexbox;
-
 display: flex;
--webkit-box-pack: justify;
--ms-flex-pack: justify;
 justify-content: space-between;
 position: relative;
 max-width: 90vw;
@@ -98,10 +91,7 @@ background-color: #99258d;
 main form {
     border: 1px solid #E7E7E7;
     height: 19em;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-top: 7em;
     margin-left: 1em;
@@ -127,20 +117,14 @@ form fieldset input {
 form fieldset input:focus {
     outline: none;
     border:1px solid #99258d;
-    -webkit-box-shadow: 0;
     box-shadow: 0;
 
 }
 
 form fieldset div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 form fieldset div label {
@@ -240,7 +224,7 @@ form fieldset a {
         height: 80px
     }
 
-          .profiel {
+          header nav a.profiel {
         top: 5.5vh;
         right: 5vw;
 
