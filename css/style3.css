@@ -318,7 +318,7 @@ input:checked + .slider:before {
     height: 10em;
     max-width: 90vw;
         margin-right: 50vw;
-        margin-left: 5vw;
+        margin-left: 4vw;
     border-top: solid 1px #d4e2e2;
         border-left: solid 1px #d4e2e2;
         border-bottom: solid 1px #d4e2e2;
@@ -335,7 +335,7 @@ article:nth-of-type(2) {
      height: 10em;
     max-width: 90vw;
         margin-right: 50vw;
-        margin-left: 5vw;
+        margin-left: 4vw;
     border-top: solid 1px #d4e2e2;
         border-left: solid 1px #d4e2e2;
         border-bottom: solid 1px #d4e2e2;

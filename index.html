@@ -5,11 +5,13 @@
 <head>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
+    <!-- zorgt ervoor dat de pagina responsive gebruikt kan worden en mee schaalt -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>99 stijloefeningen</title>
 
 <body>
     <header>
+       <!-- navigatie bovenin met lijst van links, bevat ook p's en afbeeldingen -->
         <nav>
             <ul>
                 <li>
@@ -24,8 +26,6 @@
                     </a>
 
                 </li>
-
-
                 <li>
 
                     <a href="verhalen.html">
@@ -36,31 +36,32 @@
                     </a>
 
                 </li>
+                </ul>
 
-
-            </ul>
-
+           <!-- profiel button, staat niet in de lijst vanwege positionering in css -->
             <a href="./form.html" class="profiel">
                 <p> profiel</p>
             </a>
-
+            <!-- zoekbalk in de navigatie -->
            <form action="index.html">
             <input type="text" placeholder="zoek..">
                <button type="submit" class="search"></button>
             </form>
-
         </nav>
 
+        <!-- h1 staat nog in de header -->
         <h1>99 verhalen <strong>met stijl</strong></h1>
 
     </header>
-
+<!--Main bevat alle articles en forms-->
     <main>
+       <!-- section met de navigatie van de utigelichte verhalen, h2 staat niet in de ul -->
         <section>
             <h2>Uitgelicht</h2>
+               <!-- class nav2 vanwege positionering in css -->
                 <ul class="nav2">
                 <li>
-                    <a href="">
+                    <a href="index2.html">
                         <p>Best beoordeeld</p>
                     </a>
                 </li>
@@ -78,7 +79,9 @@
             </ul>
         </section>
 
+       <!-- een div met class uitgelicht om de uitgelichte verhalen te flexen -->
         <div class="uitgelicht">
+           <!-- elk article heeft class banner om de achtergrond banner afbeelding te veranderen in css -->
             <article class="banner">
 
                 <header>
@@ -87,7 +90,8 @@
                 </a>
                 </header>
 
-                <a href="/">
+               <!-- kruisje linkt naar index2 om als prototype te laten werken -->
+                <a href="index2.html">
                     <img src="images/sluit.svg" alt="nietrelevant" class="sluit">
                 </a>
 
@@ -100,13 +104,10 @@
                         <img src="images/klok.svg" alt="leestijd"> 12m</li>
                 </ul>
 
+                <!-- button met een id en een class om met javascript te selecteren -->
+                <button type="submit" id="plus" class="paarsButton">Mijn lijst</button>
 
-                <button type="submit" id="plus" class="add">Mijn lijst</button>
-
-
-
-
-            </article>
+             </article>
 
             <article class="banner">
 
@@ -210,30 +211,26 @@
 
 
                 <button type="submit">Mijn lijst</button>
-
-
             </article>
-
-
-
-
-
         </div>
 
-
+        <!-- section met alle verhalen, section wordt gebruikt omdat er een h2 begint en het groepeert de articles -->
         <section>
             <h2>Alle verhalen</h2>
-
+            <!-- filter knop met een id om te gebruiken in javascript -->
             <button id="filter" type="submit"> FILTER <img src="images/down-arrow.svg" alt="down-arrow" class="arrow"></button>
-
+            <!-- filter formulier, er wordt een class en id gebruikt voor javascript om het menu in en uit te klappen -->
             <form  action="index2.html" id="form" class="hide">
+            <div class="forms">
 
-              <div class="forms">
+              <!-- voor elke fieldset wordt een div gebruikt voor de positionering als groep in css -->
                <div>
+               <!-- fieldset groepeert een aantal input en labels die bij elkaar horen -->
                 <fieldset>
                     <legend>Gevoel</legend>
                     <ul class="gevoel">
                         <li>
+                           <!-- input id en label for moeten hetzelfde zijn om het te laten functioneren -->
                             <input name="sort" type="checkbox" id="vrolijk">
                             <label for="vrolijk"> Vrolijk (24)</label>
                         </li>
@@ -257,8 +254,6 @@
                             <input name="sort" type="checkbox" id="gesloten">
                             <label for="gesloten"> Gesloten (13)</label>
                         </li>
-
-
                     </ul>
                 </fieldset>
                 </div>
@@ -320,11 +315,10 @@
                    </div>
 
                    <input type="submit" value="zoek">
-
                 </form>
 
 
-
+            <!-- div met alle articles dat wordt gebruikt om te flexen -->
             <div class="verhalen">
                 <article>
                     <header>
@@ -452,12 +446,11 @@
 
                 </article>
             </div>
-
-
         </section>
     </main>
 
     <footer>
+       <!-- #top zorgt ervoor dat de pagina naar boven scrolled -->
         <a href="#top">
             <p>Terug naar boven</p>
         </a>

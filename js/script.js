@@ -8,7 +8,7 @@
 var button = document.querySelector('#laad');
 var downloadImg = document.querySelector('#icoon');
 var button2 = document.querySelector('#laad2');
-var downloadImg2 = document.getElementById('icoon2');
+var downloadImg2 = document.querySelector('#icoon2');
 
 /* download switch */
 var schakelaar = document.getElementById('schakel');
@@ -20,6 +20,19 @@ var text = document.getElementById('downloadtext');
 /* + mijn lijst button en afbeelding veranderen */
 var plusLijst = document.querySelector('#plus');
 var icoon = document.getElementById('bal');
+
+function showWhite() {
+    if (plusLijst.classList.contains("paarsButton")) {
+
+        plusLijst.classList.remove("paarsButton");
+        plusLijst.classList.add("whiteButton");
+
+    } else {
+
+        plusLijst.classList.remove("whiteButton");
+        plusLijst.classList.add("paarsButton");
+    }
+}
 
 
 
@@ -73,24 +86,30 @@ function changeAll() {
 
 
 function changeLijst() {
+      if (plusLijst.classList.contains("paarsButton")) {
     plusLijst.innerHTML = "Bewaard";
-    plusLijst.style.color = "#99258d";
     icoon.src = "images/notifi.gif";
     icoon.style.height = "1.4em";
     icoon.style.transition = ".4s";
+      }
+    else {
+        plusLijst.innerHTML = "Mijn lijst";
+        icoon.src = "images/download.svg";
+    }
 
 }
 
 
-/* event listeners bij click */
+/* event listeners bij click download pagina */
 if (button, button2) {
 button.addEventListener('click', change);
 button2.addEventListener('click', change2);
 schakelaar.addEventListener('click', changeAll);
 
 }
-
+/* event listeners bij click overzichtspagina */
 plusLijst.addEventListener('click', changeLijst);
+plusLijst.addEventListener('click', showWhite);
 filterButton.addEventListener('click', showFilters);
 
 
