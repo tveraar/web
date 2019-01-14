@@ -57,7 +57,7 @@ margin-bottom: -0.2em;
 padding-left: 0.3em;
 }
 
-.logo {
+header nav li img.logo {
 
 height: 66px;
 margin-top: -2em;
@@ -94,6 +94,7 @@ font-weight: 400;
 font-size: 1.5em;
 }
 
+/* eerste article */
 article:nth-of-type(1) {
     position: relative;
     height: 11em;
@@ -107,6 +108,7 @@ article:nth-of-type(1) {
 
 }
 
+/* 2e article */
 article:nth-of-type(2) {
     position: relative;
     height: 11em;
@@ -129,7 +131,7 @@ article ul li img {
     height: 11px;
 }
 
-.sluit {
+article a img.sluit {
     position: absolute;
     height: 18px;
     top: 1em;
@@ -156,6 +158,7 @@ h3 strong {
     color: #FFDF5D;
 }
 
+/* download button */
 article button:nth-of-type(1) {
     position: absolute;
     bottom: 1em;
@@ -168,6 +171,7 @@ article button:nth-of-type(1) {
     cursor: pointer;
 }
 
+/* lees button */
 article a:nth-child(2) {
     position: absolute;
     bottom: 0.7em;
@@ -230,7 +234,7 @@ article button img {
     color: white;
 }
 
-.downloadtext {
+ .downloadtext {
     display: block;
     position: absolute;
     right: 17vw;
@@ -241,7 +245,7 @@ article button img {
 
 
 
-/*------- toggle knop, goed uitleggen bron: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch ---------
+/*------- toggle knop, code zelf aangepast bron: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch ---------
 
 /* Label */
 .switch {
@@ -254,13 +258,13 @@ article button img {
 }
 
 /* Standaard vormgeving van label weghalen */
-.switch input {
+main .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.slider {
+div span.slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -271,7 +275,7 @@ article button img {
   transition: .4s;
 }
 
-.slider:before {
+div span.slider:before {
   position: absolute;
   content: "";
   height: 16px;
@@ -282,21 +286,21 @@ article button img {
 transition: .4s;
 }
 
-input:checked + .slider {
+div input:checked + .slider {
   background-color:  #99258d;
 }
 
 /* animatie van het rondje met transform */
-input:checked + .slider:before {
+div input:checked + .slider:before {
   transform: translateX(16px);
 }
 
 /* Inputs een ronde border geven */
-.slider.round {
+div span.slider.round {
   border-radius: 34px;
 }
 
-.slider.round:before {
+div span.slider.round:before {
   border-radius: 50%;
 }
 
@@ -306,6 +310,9 @@ input:checked + .slider:before {
 
     h1 {
         text-align: center;
+        margin-top: 1.3em;
+    margin-left: 0vw;
+
     }
 
     .downloadtext {
@@ -384,20 +391,20 @@ article:nth-of-type(2) {
 
     }
 
-    .buttons {
+    div.buttons {
         position: absolute;
         right: -46.5vw;
         top: 10em;
     }
 
-     .buttons2 {
+     div.buttons2 {
         position: absolute;
         right: -46.5vw;
          top: 10em;
     }
 
 
-
+}
 
 
 
@@ -416,7 +423,7 @@ article:nth-of-type(2) {
         font-size: 0.9em;
     }
 
-        .logo {
+        header nav li img.logo {
         height: 80px
     }
 
@@ -424,7 +431,7 @@ article:nth-of-type(2) {
     height: 10em;
     max-width: 90vw;
     margin-right: 50vw;
-    margin-left: 9.5vw;
+    margin-left: 9vw;
     background-size: 120%;
 
 }
@@ -433,19 +440,19 @@ article:nth-of-type(2) {
     height: 10em;
     max-width: 90vw;
     margin-right: 50vw;
-    margin-left: 9.5vw;
+    margin-left: 9vw;
     background-size: 120%;
 
 }
 
         article p {
-            margin-left: 38vw;
+            margin-left: 37.7vw;
             width: 42vw;
             padding-right: 10vw;
             padding-bottom:  7.4em;
         }
 
-        .switch {
+        div label.switch {
   position: absolute;
     top: 8.5em;
     right: 10vw;
@@ -463,19 +470,18 @@ article:nth-of-type(2) {
         margin-top: 2em;
         }
 
-        .buttons {
+    div.buttons {
         position: absolute;
         right: -41vw;
     }
 
-     .buttons2 {
+     div.buttons2 {
         position: absolute;
         right: -41vw;
     }
 
-
-
-         @media only screen and (min-width: 1280px) {
+}
+        @media only screen and (min-width: 1280px){
 
             article p {
                 padding-bottom: 8.6em;
@@ -484,6 +490,7 @@ article:nth-of-type(2) {
 
 
         }
+
 
 
 

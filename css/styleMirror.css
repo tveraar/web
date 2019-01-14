@@ -166,7 +166,7 @@ box-shadow: inset 0px 8px 56px -10px #000000;
 
 article.banner {
 
-    background-image: url(../images/klumper.png);
+    background-image: url(../images/western2.png);
     position: relative;
     flex-basis: 70%;
     top: 0px;
@@ -181,18 +181,18 @@ article.banner {
 
 article.banner:nth-of-type(1) {
 
-    background-image: url(../images/klumper.png);
+    background-image: url(../images/western2.png);
     background-size: 130%;
 }
 
 article.banner:nth-of-type(2) {
 
-background-image: url(../images/gefrustreerd.png);
+background-image: url(../images/twitter.png);
 }
 
 article.banner:nth-of-type(3) {
 
-  background-image: url(../images/twitter.png);
+  background-image: url(../images/paranoia.png);
 }
 
    article.banner:nth-of-type(4) {
@@ -235,7 +235,8 @@ article img.sluit {
 
 }
 
-article ul {
+/* lijst in article met iconen */
+article ul:nth-of-type(1) {
 
     position: absolute;
     display: flex;
@@ -319,14 +320,7 @@ article button.paarsButton {
 
 
 
-/* alle verhalen */
 
-section h2:nth-last-child(4) {
-
-    position: relative;
-    margin-top: 1em;
-    width: 10em;
-}
 
 /* form */
 
@@ -438,6 +432,7 @@ button#filter:focus {
 
 }
 
+/* pijltje in de filter knop */
 section button img {
 
     position: absolute;
@@ -446,8 +441,16 @@ section button img {
     right: 1em;
 }
 
+/* alle verhalen */
 
+section h2:nth-last-child(4) {
 
+    position: relative;
+    margin-top: 1em;
+    width: 10em;
+}
+
+/* elk verhaal krijgt deze positionering */
 section article {
 
     position: relative;
@@ -461,18 +464,8 @@ section article {
     margin-top: 0.3em;
 }
 
-
+/* veranderd afbeeldingen */
 section article:nth-of-type(2) {
-
-    background-image: url(../images/regenboog.png);
-}
-
-section article:nth-of-type(1) {
-
-    background-image: url(../images/notitie.png);
-}
-
-section article:nth-of-type(4) {
 
     background-image: url(../images/verliefd.png);
 }
@@ -482,9 +475,19 @@ section article:nth-of-type(3) {
     background-image: url(../images/regenboog.png);
 }
 
-section article:nth-of-type(5) {
+section article:nth-of-type(4) {
 
     background-image: url(../images/notitie.png);
+}
+
+section article:nth-of-type(5) {
+
+    background-image: url(../images/verliefd.png);
+}
+
+section article:nth-of-type(6) {
+
+    background-image: url(../images/regenboog.png);
 }
 
 section article h4 {
@@ -502,6 +505,7 @@ section article h4 {
 
 /* social stats 2 */
 
+/* lijst met iconen deel 2 */
 article ul:nth-child(2) {
     position: absolute;
     left: 1em;
@@ -583,85 +587,7 @@ body footer a p {
 
 @media only screen and (min-width: 700px) {
 
-    main div.uitgelicht {
-
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 90vw;
-        margin: auto;
-        justify-content: space-between;
-    }
-
-    article.banner {
-
-        background-size: 140%;
-        margin-right: 0.3em;
-        margin-bottom: 0.3em;
-    }
-
-    article.banner:nth-of-type(1) {
-
-        flex: 1;
-        background-size: 150%;
-        flex-basis: 100%;
-    }
-
-    article.banner:nth-of-type(2) {
-
-        flex: 2;
-        background-size: 150%;
-        flex-basis: 44%;
-    }
-
-    article.banner:nth-of-type(3) {
-
-        flex: 3;
-        background-size: 150%;
-        flex-basis: 40%;
-    }
-
-     article.banner:nth-of-type(4) {
-
-        display: none;
-    }
-
-     article.banner:nth-of-type(5) {
-
-        display: none;
-    }
-
-
-    header nav li .logo {
-
-        height: 66px;
-    }
-
-
-
-    section div.verhalen {
-
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 90vw;
-        margin: auto;
-        justify-content: space-between;
-    }
-
-section article h4 {
-
-    width: 43.8vw;
-    }
-
-    section article {
-
-        width: 44vw;
-    }
-
-    header h1 {
+      header h1 {
 
         background-image: url(../images/achtergrond.png);
         background-size: 100%;
@@ -731,11 +657,7 @@ section article h4 {
         left: 4vw;
         width: 8em;
 }
-    @media only screen and (min-width: 900px) {
-        header form input[type="text"] {
-            width: 10em;
-        }
-    }
+
 
 
     section h2:first-child {
@@ -754,10 +676,10 @@ section article h4 {
 
 button#filter {
 
-    width: 90vw;
+    width: 89vw;
     }
 
-
+/* alle fieldsets flexen */
     section div:nth-child(1) {
 
         display: flex;
@@ -766,6 +688,89 @@ button#filter {
 
 
     }
+
+    /* container waar de uitgelichte verhalen inzitten */
+    main div.uitgelicht {
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    /* elk verhaal */
+    article.banner {
+
+        background-size: 140%;
+        margin-right: 0.3em;
+        margin-bottom: 0.3em;
+    }
+
+    /* veranderd grootte met flex-basis */
+    article.banner:nth-of-type(1) {
+
+        flex: 1;
+        background-size: 150%;
+        flex-basis: 100%;
+    }
+
+    article.banner:nth-of-type(2) {
+
+        flex: 2;
+        background-size: 150%;
+        flex-basis: 44%;
+    }
+
+    article.banner:nth-of-type(3) {
+
+        flex: 3;
+        background-size: 150%;
+        flex-basis: 40%;
+    }
+
+     article.banner:nth-of-type(4) {
+
+        display: none;
+    }
+
+     article.banner:nth-of-type(5) {
+
+        display: none;
+    }
+
+
+    header nav li .logo {
+
+        height: 66px;
+    }
+
+
+/* container waar alle verhalen inzitten, met flex gestyled */
+    section div.verhalen {
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+section article h4 {
+
+    width: 43.8vw;
+    }
+
+    section article {
+
+        width: 44vw;
+    }
+
+
 
 
     footer a p {
@@ -866,7 +871,7 @@ article.banner:nth-of-type(1) {
         height: 3em;
         width: 3em;
         top: 5em;
-        left: 17vw;
+        left: 16vw;
     }
 
 
@@ -970,6 +975,7 @@ section article h4 {
 
 
 }
+
 
 
 
