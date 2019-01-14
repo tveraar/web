@@ -123,6 +123,12 @@ margin-top: 0.7em;
 margin-bottom: 0.4em;
 }
 
+main section ul.nav2 a.active {
+color: #99258d;
+    font-weight: 700;
+
+}
+
 
 main section ul.nav2 li a {
 
@@ -181,18 +187,18 @@ article.banner {
 
 article.banner:nth-of-type(1) {
 
-    background-image: url(../images/western2.png);
+    background-image: url(../images/klumper.png);
     background-size: 130%;
 }
 
 article.banner:nth-of-type(2) {
 
-background-image: url(../images/twitter.png);
+background-image: url(../images/western.png);
 }
 
 article.banner:nth-of-type(3) {
 
-  background-image: url(../images/paranoia.png);
+  background-image: url(../images/western2.png);
 }
 
    article.banner:nth-of-type(4) {
@@ -465,22 +471,22 @@ section article {
 }
 
 /* veranderd afbeeldingen */
-section article:nth-of-type(2) {
+section article:nth-of-type(1) {
 
     background-image: url(../images/verliefd.png);
 }
 
-section article:nth-of-type(3) {
+section article:nth-of-type(2) {
 
     background-image: url(../images/regenboog.png);
 }
 
-section article:nth-of-type(4) {
+section article:nth-of-type(3) {
 
     background-image: url(../images/notitie.png);
 }
 
-section article:nth-of-type(5) {
+section article:nth-of-type(4) {
 
     background-image: url(../images/verliefd.png);
 }
