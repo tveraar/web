@@ -20,6 +20,8 @@ De website maakt gebruik van 3 breakpoints oftewel media queries, die ervoor zor
 op meerdere devices goed uitziet. Onderstaand zal ik toelichting geven over belangrijke of complexe codes per pagina.
 
 
+
+
 - 1. DE OVERZICHTSPAGINA / BIBLIOTHEEK / INDEX.HTML / GELINKT AAN STYLE.CSS & SCRIPT.JS -
 
 HEADER
@@ -49,12 +51,18 @@ CSS
 INDEX2.HTML
 • Dit is een mirror pagina van index.html waarbij de images door elkaar zij gehusseld. Dit is voor het prototype belangrijk om naar te verwijzen na het klikken op een submit uit een formulier of een link.
 
+
+
+
 - 2. INLOG PAGINA FORM.HTML -
 
 • De header > nav is het hetzelfde als index.html, alleen zonder de zoekbalk.
 
 FORM
 • In de main staat de form met een fieldset login, dit groepeert de login elementen van het formulier. Hierin staat een legend "login", de titel van het formulier. In het formulier staan divjes om de input vanwege stijling in css. Er wordt een label gebruikt voor de gebruikersnaam en voor wachtwoord. Hieraan staan inputs voor de email en voor het wachtwoord. Dit moet door de gebruiker zijn ingevuld. Aan het einde van het formulier staat een submit knop om het formulier te versturen. Je gaat hierdoor naar index.html. Ook staat een er een link om een account aan te maken.
+
+
+
 
 - 3. MIJN VERHALEN PAGINA / VERHALEN.HTML / GELINKT AAN STYLE3.CSS & SCRIPT.JS -
 
@@ -68,6 +76,9 @@ ARTICLES
 
 BUTTONS
 • De buttons uit de artikelen worden gegroepeerd en in javascript aangeroepen om te veranderen. Ze worden in javascipt genoemd en gestopt in een functie die zegt, veranderd de source als er op geklikt wordt. Dit zorgt ervoor dat er een gifje afspeelt als er op een knop of schakelaar wordt geklikt.
+
+
+
 
 - 4. WESTERN.HTML / HET VERHAAL / GELINKT AAN STYLEVERHAAL.CSS & SCRIPTVERHAAL.JS -
 
