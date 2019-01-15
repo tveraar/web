@@ -20,7 +20,7 @@ De website maakt gebruik van 3 breakpoints oftewel media queries, die ervoor zor
 op meerdere devices goed uitziet. Onderstaand zal ik toelichting geven over belangrijke of complexe codes per pagina.
 
 
-- DE OVERZICHTSPAGINA / BIBLIOTHEEK / INDEX.HTML -
+- 1. DE OVERZICHTSPAGINA / BIBLIOTHEEK / INDEX.HTML / GELINKT AAN STYLE.CSS & SCRIPT.JS -
 
 HEADER
 • In header staat een nav elementen waar zich een UL (lijst) in bevind met de navigatie balk, gepositioneerd met display flex om de meeste items in de lijst naast elkaar te zetten.
@@ -45,4 +45,31 @@ CSS
 •In css worden media queries gebruikt om de content per device te laten verspringen zodat het er goed uit blijft zien.
 - @media only screen and (min-width: 700px). Dit is het breakpoint voor tablet gebruik. Alles onder een viewport breedte van 700px is geschikt voor mobile.
 - @media only screen and (min-width: 1024px). Dit is het break voor desktop gebruik
+
+INDEX2.HTML
+• Dit is een mirror pagina van index.html waarbij de images door elkaar zij gehusseld. Dit is voor het prototype belangrijk om naar te verwijzen na het klikken op een submit uit een formulier of een link.
+
+- 2. INLOG PAGINA FORM.HTML -
+
+• De header > nav is het hetzelfde als index.html, alleen zonder de zoekbalk.
+
+FORM
+• In de main staat de form met een fieldset login, dit groepeert de login elementen van het formulier. Hierin staat een legend "login", de titel van het formulier. In het formulier staan divjes om de input vanwege stijling in css. Er wordt een label gebruikt voor de gebruikersnaam en voor wachtwoord. Hieraan staan inputs voor de email en voor het wachtwoord. Dit moet door de gebruiker zijn ingevuld. Aan het einde van het formulier staat een submit knop om het formulier te versturen. Je gaat hierdoor naar index.html. Ook staat een er een link om een account aan te maken.
+
+- 3. MIJN VERHALEN PAGINA / VERHALEN.HTML / GELINKT AAN STYLE3.CSS & SCRIPT.JS -
+
+• De header > nav is het hetzelfde als index.html, alleen zonder de zoekbalk.
+
+SCHAKELAAR / SWITCH
+• In de main staat een div met een label een input en een span. Deze elementen worden in css bewerkt dat het een toggle button wordt.
+
+ARTICLES 
+• In de main staan 2 articles/verhalen die dezelfde content hebben als op index.html. Op mobiel gebruik zie je alleen het verhaal en de titel met de buttons. Op tablet en desktop gebruik zie je wat meer content, namelijk al een klein stukje van de tekst van het verhaal.
+
+BUTTONS
+• De buttons uit de artikelen worden gegroepeerd en in javascript aangeroepen om te veranderen. Ze worden in javascipt genoemd en gestopt in een functie die zegt, veranderd de source als er op geklikt wordt. Dit zorgt ervoor dat er een gifje afspeelt als er op een knop of schakelaar wordt geklikt.
+
+- 4. WESTERN.HTML / HET VERHAA; / GELINKT AAN STYLEVERHAAL.CSS & SCRIPTVERHAAL.JS -
+
+• In de html staat een main met 6 verschillende images. 3 voor achtegrond images die worden gebruikt bij verschillende breakpoints. En 3 images van een astronaut die worden gebruikt voor de breakpoints en javascript. Met javascript wordt ervoor gezorgd dat de astronaut steeds kleiner wordt tijdens het scrollen. Door de functie window.onscroll en if statement document.body.scrolltop wordt gekeken of de gebruiker op het aantal aangegeven pixels naar beneden heeft gescrolled. Als dit het geval is dan veranderd de hoogte van het astronaut plaatje.
 
