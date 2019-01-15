@@ -487,6 +487,13 @@ article:nth-of-type(2) {
                 padding-bottom: 8.6em;
             }
 
+            div.buttons {
+                right:  -40vw;
+            }
+             div.buttons2 {
+                 right:  -40vw;
+            }
+
 
 
         }
