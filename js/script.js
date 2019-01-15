@@ -21,6 +21,7 @@ var text = document.getElementById('downloadtext');
 var plusLijst = document.querySelector('#plus');
 var icoon = document.getElementById('bal');
 
+/* functie die kijtk naar als de class paarsButton heeft, deze weghalen en whiteButton toevoegen */
 function showWhite() {
     if (plusLijst.classList.contains("paarsButton")) {
 
@@ -32,6 +33,21 @@ function showWhite() {
         plusLijst.classList.remove("whiteButton");
         plusLijst.classList.add("paarsButton");
     }
+}
+
+/* functie die kijkt als de class paarsButton is, het plaatje in de nav veranderen naar de gif*/
+function changeLijst() {
+      if (plusLijst.classList.contains("paarsButton")) {
+    plusLijst.innerHTML = "Bewaard";
+    icoon.src = "images/notifi.gif";
+    icoon.style.height = "1.4em";
+    icoon.style.transition = ".4s";
+      }
+    else {
+        plusLijst.innerHTML = "Mijn lijst";
+        icoon.src = "images/download.svg";
+    }
+
 }
 
 
@@ -85,19 +101,7 @@ function changeAll() {
 }
 
 
-function changeLijst() {
-      if (plusLijst.classList.contains("paarsButton")) {
-    plusLijst.innerHTML = "Bewaard";
-    icoon.src = "images/notifi.gif";
-    icoon.style.height = "1.4em";
-    icoon.style.transition = ".4s";
-      }
-    else {
-        plusLijst.innerHTML = "Mijn lijst";
-        icoon.src = "images/download.svg";
-    }
 
-}
 
 
 /* event listeners bij click download pagina */
