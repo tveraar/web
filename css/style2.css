@@ -1,14 +1,14 @@
 * {
-margin: 0;
-box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 
 }
 
 body {
-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-max-width: 100vw;
-height: 100vh;
-border: solid 5px #a84089;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    max-width: 100vw;
+    height: 100vh;
+    border: solid 5px #a84089;
 
 }
 
@@ -24,20 +24,20 @@ border: solid 5px #a84089;
 
 header nav ul {
 
-display: flex;
-justify-content: space-between;
-position: relative;
-max-width: 90vw;
-margin: auto;
-list-style-type: none;
-font-size: 0.8em;
-font-weight: 300;
-text-transform: uppercase;
-border-bottom: solid 1px #a6c4c4;
-padding: 0;
-padding-top: 2em;
-padding-bottom: 0em;
-margin-top: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 90vw;
+    margin: auto;
+    list-style-type: none;
+    font-size: 0.8em;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: solid 1px #a6c4c4;
+    padding: 0;
+    padding-top: 2em;
+    padding-bottom: 0em;
+    margin-top: 1.3em;
 }
 
 nav li {
@@ -47,44 +47,45 @@ nav li {
 
 nav a {
 
-text-decoration: none;
-color: black;
+    text-decoration: none;
+    color: black;
 }
 
 nav a:hover {
 
-color: #a84089;
+    color: #a84089;
 }
 
 nav img {
 
-height: 1.2em;
-margin-bottom: -0.2em;
-padding-left: 0.3em;
+    height: 1.2em;
+    margin-bottom: -0.2em;
+    padding-left: 0.3em;
 }
 
 nav .logo {
 
-height: 66px;
-margin-top: -2em;
+    height: 66px;
+    margin-top: -2em;
 }
+
 nav a.profiel {
 
-font-size: 0.7em;
-position: absolute;
-right: 7vw;
-top: 1.5em;
-color: #a84089;
-border: solid 1px #99258d;
-padding: 0.5em;
-border-radius: 0.5em;
+    font-size: 0.7em;
+    position: absolute;
+    right: 7vw;
+    top: 1.5em;
+    color: #a84089;
+    border: solid 1px #99258d;
+    padding: 0.5em;
+    border-radius: 0.5em;
 }
 
 nav a.profiel:hover {
 
-position: absolute;
-color: #ffffff;
-background-color: #99258d;
+    position: absolute;
+    color: #ffffff;
+    background-color: #99258d;
 }
 
 
@@ -108,19 +109,20 @@ form fieldset label {
 form fieldset input {
     border: 1px solid #bfbfbf;
     padding-right: 3em;
-        padding-top: 0.6em;
-        padding-bottom: 0.6em;
-        padding-left: 0.6em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    padding-left: 0.6em;
 }
 
 
 form fieldset input:focus {
     outline: none;
-    border:1px solid #99258d;
+    border: 1px solid #99258d;
     box-shadow: 0;
 
 }
 
+/* div die fieldsets flexed */
 form fieldset div {
     display: flex;
     justify-content: space-around;
@@ -135,6 +137,7 @@ form fieldset div {
     margin-bottom: 1em;
 }
 
+/* login submit button */
 input#login {
     position: absolute;
     right: 1em;
@@ -160,7 +163,35 @@ form legend {
     padding-top: 0.3em;
 }
 
+/* registratie link */
+form fieldset a {
+    text-decoration: none;
+    color: #a84089;
+    font-size: 0.8em;
+    font-weight: 600;
+    position: absolute;
+    bottom: 3em;
+    right: 1em;
+}
+
+/* tablet */
 @media only screen and (min-width: 700px) {
+
+
+    header nav .profiel {
+        top: 4vh;
+        right: 5vw;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    header nav ul {
+        padding-left: 20vw;
+        padding-right: 20vw;
+
+
+    }
+
     main form {
         position: absolute;
         top: 7vh;
@@ -180,59 +211,29 @@ form legend {
         padding-left: 0.6em;
     }
 
+    form fieldset a {
+        bottom: 1em;
     }
-
-form fieldset a {
-    text-decoration: none;
-    color: #a84089;
-    font-size: 0.8em;
-    font-weight: 600;
-    position: absolute;
-    bottom: 3em;
-    right: 1em;
 }
 
+/* dekstop */
+@media only screen and (min-width: 1024px) {
 
-
-    @media only screen and (min-width: 700px) {
-
-         header nav .profiel {
-        top: 4vh;
-        right: 5vw;
-        padding-left: 2em;
-        padding-right: 2em;
+    header nav ul {
+        font-size: 1em;
+        width: 80vw;
     }
 
-    header nav ul  {
-        padding-left: 20vw;
-        padding-right: 20vw;
-
-
-    }
-
-        form fieldset a {
-            bottom: 1em;
-        }
-}
-
-        @media only screen and (min-width: 1024px) {
-
-            header nav ul  {
-                font-size: 1em;
-                width: 80vw;
-            }
-
-            header .logo {
+    header .logo {
         height: 80px
     }
 
-          header nav a.profiel {
+    header nav a.profiel {
         top: 5.5vh;
         right: 10vw;
 
 
-        }
+    }
 
 
-        }
-
+}
