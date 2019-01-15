@@ -69,7 +69,9 @@ ARTICLES
 BUTTONS
 • De buttons uit de artikelen worden gegroepeerd en in javascript aangeroepen om te veranderen. Ze worden in javascipt genoemd en gestopt in een functie die zegt, veranderd de source als er op geklikt wordt. Dit zorgt ervoor dat er een gifje afspeelt als er op een knop of schakelaar wordt geklikt.
 
-- 4. WESTERN.HTML / HET VERHAA; / GELINKT AAN STYLEVERHAAL.CSS & SCRIPTVERHAAL.JS -
+- 4. WESTERN.HTML / HET VERHAAL / GELINKT AAN STYLEVERHAAL.CSS & SCRIPTVERHAAL.JS -
 
 • In de html staat een main met 6 verschillende images. 3 voor achtegrond images die worden gebruikt bij verschillende breakpoints. En 3 images van een astronaut die worden gebruikt voor de breakpoints en javascript. Met javascript wordt ervoor gezorgd dat de astronaut steeds kleiner wordt tijdens het scrollen. Door de functie window.onscroll en if statement document.body.scrolltop wordt gekeken of de gebruiker op het aantal aangegeven pixels naar beneden heeft gescrolled. Als dit het geval is dan veranderd de hoogte van het astronaut plaatje.
+
+Einde ReadMe.
 
