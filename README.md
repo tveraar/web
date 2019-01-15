@@ -16,10 +16,15 @@ Business goals
 1. De merkbeleving van NS versterken in de periode voor en tijdens de reis.
 2. NS wil niet langer als een vervoerder bekend staan maar als een distributeur van ervaringen.
 
+Op de verhalen website wordt gebruik gemaakt van meerdere pagina's waar de gebruiker kan navigeren:
+1. Index.html (de overzichtspagina), gelinkt aan style.css en script.js
+2. Index2.html (een spiegelwebsite met andere plaatjes voor formulieren), gelinkt aan styleMirror.css en script.js
+3. Form.html (inlog-pagina), gelinkt aan style2.css
+4. Verhalen.html (mijn verhalen pagina), gelinkt aan style3.css en script.js
+5. Western.html (het verhaal), gelinkt aan styleVerhaal.css en scriptVerhaal.css
+
 De website maakt gebruik van 3 breakpoints oftewel media queries, die ervoor zorgen dat de content er
 op meerdere devices goed uitziet. Onderstaand zal ik toelichting geven over belangrijke of complexe codes per pagina.
-
-
 
 
 - 1. DE OVERZICHTSPAGINA / BIBLIOTHEEK / INDEX.HTML / GELINKT AAN STYLE.CSS & SCRIPT.JS -
